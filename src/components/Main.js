@@ -39,6 +39,8 @@ class Main extends React.Component {
             {lessonList.map((lessonItem) => {
               return(
                 <Lesson
+                  // Lessonコンポーネントを呼び出し
+                  // 3つのpropsを渡している
                   name={lessonItem.name}
                   image={lessonItem.image}
                   introduction={lessonItem.introduction}

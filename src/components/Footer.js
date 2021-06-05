@@ -2,6 +2,8 @@ import React from 'react';
 
 class Footer extends React.Component {
   render() {
+    const fotterList = ["会社概要", "採用", "お問い合わせ"];
+
     return (
       <div className='footer'>
         <div className='footer-inner'>
@@ -10,9 +12,9 @@ class Footer extends React.Component {
             <p>Learn to code, learn to creative.</p>
           </div>
           <ul className='footer-list'>
-            <li>会社概要</li>
-            <li>採用</li>
-            <li>お問い合わせ</li>
+            {fotterList.map((item) => {
+              return <li>{item}</li>
+            })}
           </ul>
         </div>
       </div>
